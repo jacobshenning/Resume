@@ -1,0 +1,62 @@
+#
+# Configuration File
+# _config.yml
+# By Jacob Henning
+#
+
+# Site Info
+name: Jacob Henning
+description: This is a resume showing all the cool things Jacob has learned
+
+# Plugins
+plugins:
+  - jemoji
+  - jekyll-sitemap
+  - jekyll-coffeescript
+
+# Sass Settings
+sass:
+  style: compressed
+
+# Collection Setup
+collections:
+  posts:
+    output: true
+    title: "posts"
+    permalink: "/blog/:title"
+  pages:
+    output: true
+    title: "pages"
+    permalink: "/:title/"
+  docs:
+    output: true
+    title: "docs"
+    permalink: "/docs/:title/"
+  tutorials:
+    output: true
+    title: "tutorials"
+    permalink: "/tutorials/:title/"
+
+# Collection Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+      author: "Jacob Henning"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "tutorials"
+    values:
+      layout: "default"

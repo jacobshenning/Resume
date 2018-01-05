@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body class="row">
+  <!-- Masthead -->
+  <header class="col-12">
+    {% include masthead.html %}
+  </header>
+  <!-- Main Content -->
+  <main class="col-lg-8 offset-lg-1 col-md-12">
+    {{ content }}
+  </main>
+  <!-- Secondary Content -->
+  <aside class="col-lg-2 col-md-12 sticky-top">
+    {% include aside.html %}
+  </aside>
+  <!-- Footer -->
+  <footer class="col-12">
+    {% include footer.html %}
+  </footer>
+  <!-- Scripts -->
+  <div>
+    {% include scripts.html %}
+  </div>
+  <!-- End of Site -->
+</body>
+</html>

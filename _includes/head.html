@@ -1,0 +1,20 @@
+<!-- Meta -->
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<!-- Info -->
+<title> {% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %} </title>
+<link rel='shortcut icon' href='{{ site.baseurl }}/assets/img/coffee.ico'/>
+<meta name='description' content='{{ page.excerpt | strip_html }}'>
+
+<!-- Style -->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/cosmo.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css">
+
+<!-- IE6-8 -->
+<!--[if lt IE 9]>
+  <script src='js/html5shiv.js'></script>
+  <script src='js/respond.min.js'></script>
+<![endif]-->
